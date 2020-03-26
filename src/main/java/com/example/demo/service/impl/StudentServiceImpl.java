@@ -21,7 +21,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public List<Student> selectone(String name){
+    public Student selectone(String name){
         return studentDao.selectone(name);
     }
 

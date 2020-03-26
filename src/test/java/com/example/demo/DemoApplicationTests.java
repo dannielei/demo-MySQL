@@ -26,7 +26,7 @@ class DemoApplicationTests {
     }
     @Test
     void selectonetext() {
-        List<Student> student = studentService.selectone("lxd");
+        Student student = studentService.selectone("lxd");
         System.out.println(student.toString());
     }
 

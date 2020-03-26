@@ -38,8 +38,8 @@ public class StudentController {
 
 
     @GetMapping("/get/{name}")
-    public ResponseEntity<List<Student>> selectone(@PathVariable("name") String name) {
-        List<Student> students=studentService.selectone(name);
+    public ResponseEntity<Student> selectone(@PathVariable("name") String name) {
+        Student students=studentService.selectone(name);
         return new ResponseEntity<>(students,HttpStatus.OK);
     }
 
